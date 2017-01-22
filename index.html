@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Happ Rent</title>
     <meta charset="utf-8">
@@ -25,17 +24,12 @@
          * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
          * @returns {}
          */
-        var forEach = function(t, o, r) {
-            if ("[object Object]" === Object.prototype.toString.call(t))
-                for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
-            else
-                for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
-        };
+        var forEach = function (t, o, r) { if ("[object Object]" === Object.prototype.toString.call(t)) for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t); else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t) };
 
         var hamburgers = document.querySelectorAll(".hamburger");
         if (hamburgers.length > 0) {
-            forEach(hamburgers, function(hamburger) {
-                hamburger.addEventListener("click", function() {
+            forEach(hamburgers, function (hamburger) {
+                hamburger.addEventListener("click", function () {
                     this.classList.toggle("is-active");
                 }, false);
             });
@@ -54,8 +48,7 @@
             /* Incase of overlay problems just increase the min-height*/
         }
 
-        .video-section h1,
-        .video-section h3 {
+        .video-section h1, .video-section h3 {
             text-align: center;
             color: #fff;
         }
@@ -94,20 +87,20 @@
             overflow: auto;
         }
 
-        .icon-bar a {
-            width: 25%;
-            padding: 12px 0;
-            float: left;
-            transition: all 0.3s ease;
-            color: white;
-            font-size: 36px;
-            text-align: center;
-            align-content: center;
-        }
+            .icon-bar a {
+                width: 25%;
+                padding: 12px 0;
+                float: left;
+                transition: all 0.3s ease;
+                color: white;
+                font-size: 36px;
+                text-align: center;
+                align-content: center;
+            }
 
-        .icon-bar a:hover {
-            background-color: #000;
-        }
+                .icon-bar a:hover {
+                    background-color: #000;
+                }
 
         .active {
             background-color: #4CAF50;
@@ -118,12 +111,11 @@
             border-color: transparent;
         }
 
-        .navbar-inverse .navbar-toggle:focus,
-        .navbar-inverse .navbar-toggle:hover {
-            background-color: #B63D32;
-        }
+            .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+                background-color: #B63D32;
+            }
 
-        .navbar-inverse .navbar-nav>li>a {
+        .navbar-inverse .navbar-nav > li > a {
             color: #fff;
         }
 
@@ -132,12 +124,12 @@
             border-color: transparent;
         }
 
-        .navbar-inverse .navbar-brand {
-            color: #fff;
-        }
+            .navbar-inverse .navbar-brand {
+                color: #fff;
+            }
 
         body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             font-size: 14px;
             line-height: 1.42857143;
             color: #333;
@@ -145,7 +137,7 @@
         }
     </style>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             $(".player").mb_YTPlayer();
 
@@ -153,7 +145,6 @@
     </script>
 
 </head>
-
 <body style="padding-top:0px">
     <div class="navbar navbar-inverse navbar navbar-collapse" style="color:#B63D32;margin-bottom: 1px;border-radius:0px">
         <div class="container">
@@ -163,14 +154,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/Index.html" class="navbar-brand">Happ-Rent</a>
+                <a href="/index.html" class="navbar-brand">Happ-Rent</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                   <li><a href="/Categories.html">Categories</a></li>
-                   <li><a href="/About.html">About</a></li>
-                   <li><a href="/Contact.html">Contact</a></li>
-               </ul>
+                    <li><a href="/Categories.html">Categories</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                </ul>
                 <!--<div class="col-sm-7 col-md-7 pull-right">
             <form class="navbar-form" role="search">
                 <div class="input-group">
@@ -191,9 +182,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Happ-Rent</h1>
-                        <h3>Rent What You Need At a Corporate Level</h3>
+                        <h3>Your One Stop Rental Platform</h3>
                         <div style="text-align:center">
-                            <span class="btn btn-default btn-lg" style=""><a href="/Index.html">Sign Up Now!!!</a></span>
+                            <span class="btn btn-default btn-lg" style="background-color:#B63D32; border-color:transparent"><a href="/Index.html"style="color:white">Sign Up Now</a></span>
                         </div>
                     </div>
                 </div>
@@ -203,20 +194,19 @@
 
     <div class="container">
         <div class="row col-md-5 col-xs-5">
-            <h3>Mobile Friendly</h3>
+
+            <p style="text-align: center">
+                <img src="Images/Pig Money.png" style="width:100px;">
+            </p><h3 style="text-align:center">Mobile Friendly</h3>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
         <div class="col-md-2 col-xs-2"></div>
         <div class="row col-md-5 col-xs-5">
             <h3>Easy</h3>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
     </div>
@@ -232,27 +222,21 @@
         <div class="row col-md-3 col-xs-5">
             <h3>Mobile Friendly</h3>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
         <div class="col-md-1 col-xs-2"></div>
         <div class="row col-md-3 col-xs-5">
             <h3>Easy</h3>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
         <div class="col-md-1 col-xs-3"></div>
         <div class="row col-md-3 col-xs-5">
             <h3>Easy</h3>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
 
@@ -280,19 +264,19 @@
                     <td>closed</td>
                 </tr>
             </table>
-    </div>
+        </div>
 
-    <!-- column 2  -->
-    <div class="col-xs-12
+        <!-- column 2  -->
+        <div class="col-xs-12
                     col-sm-4
                     col-md-4
                     col-lg-4">
-        <!-- <div class="col-xs-6 col-xs-offset-3"> -->
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.320305403384!2d103.80423834999999!3d1.27526995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x43e454b88753032a!2sGoogle+Asia+Pacific!5e0!3m2!1sen!2ssg!4v1485006218786"></iframe>
-        </div>
+            <!-- <div class="col-xs-6 col-xs-offset-3"> -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.320305403384!2d103.80423834999999!3d1.27526995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x43e454b88753032a!2sGoogle+Asia+Pacific!5e0!3m2!1sen!2ssg!4v1485006218786"></iframe>
+            </div>
 
-        <!-- </div> -->
+            <!-- </div> -->
         </div>
         <!-- column 3  -->
         <div class="col-xs-12
@@ -308,27 +292,26 @@
                 </a>
             </div>
 
-            </div>
-            <!-- end of row 5 -->
-            <!-- ################################ -->
+        </div>
+        <!-- end of row 5 -->
+        <!-- ################################ -->
 
-            <div class="row">
-                <!-- row 6 -->
-                <div class="col-xs-12 text-center">
-                    <ul class="list-inline">
-                        <li><a href="https://www.happ-rent.co"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-                        <li><a href="http://www.happ-rent.co"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                        <li><a href="http://www.happ-rent.co"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                        <li><a href="http://www.happ-rent.co"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-                        <li><a href="http://www.happ-rent.co/"><i class="fa fa-address-book fa-2x" aria-hidden="true"></i></a></li>
-                    </ul>
+        <div class="row">
+            <!-- row 6 -->
+            <div class="col-xs-12 text-center">
+                <ul class="list-inline">
+                    <li><a href="https://www.happ-rent.co"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="http://www.happ-rent.co"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="http://www.happ-rent.co"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="http://www.happ-rent.co"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="http://www.happ-rent.co/"><i class="fa fa-address-book fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
 
-                </div>
             </div>
-            </div>
+        </div>
+    </div>
 
 
 
 </body>
-
 </html>
